@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--butrap-->
+
+    <!-- ICON-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <!-- Bootstrap -->
+
+    <!-- nouislider -->
+
+    <title>2TM BOOKS</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <a href="trangchu.html" class="logo">
+        <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a
+      >
+
+      <nav class="navbar">
+        <a href="trangchu.html">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="tintuc.html">Tin tức</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </nav>
+
+      <div class="icons">
+        <a href="giohang.html">
+          <div class="fa fa-solid fa-shopping-cart" id="cart-btn"></div>
+        </a>
+        <a href="login.html"
+          ><div class="fa fa-solid fa-user" id="login-btn"></div
+        ></a>
+        <div class="fa fa-solid fa-search" id="search-btn"></div>
+        <div class="fa-solid fa-bars" id="menu-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="Nhập sách cần tìm..."
+        />
+        <label for="search-box" class="fa fa-solid fa-search"></label>
+      </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class="product-details container" id="product-details">
+      <div class="row item-start-detail">
+        <div class="col-6">
+          <div id="show-img-detail"></div>
+        </div>
+        <div class="col-6">
+          <h2 class="" id="name-product">Name</h2>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="text-description">
+                Nhà cung cấp: <strong>2TM Books</strong>
+              </p>
+              <p class="text-description">
+                Xuất xứ: <strong> Việt Nam</strong>
+              </p>
+            </div>
+            <div>
+              <p class="text-description">
+                Thương hiệu: <strong> Tiger Family</strong>
+              </p>
+            </div>
+          </div>
+          <div class="wrapper-start">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div style="margin-left: 8px">(900 đánh giá)</div>
+          </div>
+          <div class="wrapper-price">
+            <p class="new-price-detail" id="price-new">120.000đ</p>
+            <p class="old-price-detail" id="price-old">120.000đ</p>
+            <div class="percent-detail" id="percent-discount">-20%</div>
+          </div>
+          <div class="--wrapper-content-quantity">
+            <p>Số lượng</p>
+            <div class="--wrapper-quantity">
+              <button onClick="decrement()">-</button>
+              <input type="text" value="1" id="quantity-item" readonly />
+              <button onClick="increment()">+</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="buy-now">MUA NGAY</button>
+            <button id="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+          </div>
+          
+        </div>
+        
+      </div>
+     
+    </div>
+
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <img src="image/logo_2tm.png">
+                  <ul>
+                      <li><i class="fa-solid fa-location-dot"></i> 12 Nguyễn Văn Bảo, phường 4, Gò Vấp
+                          TP.HCM</li>
+                      <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                      <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                  </ul>
+              </div>
+              <div class="footer-col-2">
+                  <h2>giới thiệu</h2>
+                  <ul>
+                      <li>Về 2TM Books</li>
+                      <li>Tuyển dụng</li>
+                      <li>Hệ thống chi nhánh</li>
+                      <li>Liên hệ</li>
+                  </ul>
+              </div>
+
+              <div class="footer-col-3">
+                  <h2>Dịch vụ</h2>
+                  <ul>
+                      <li>Điều khoản sử dụng</li>
+                      <li>Giới thiệu 2TM Books</li>
+                      <li>Chính sách bảo mật</li>
+                      <li>Chính sách thanh toán</li>
+                  </ul>
+              </div>
+              <div class="footer-col-4">
+                  
+                  <h2>hỗ trợ</h2>
+                  <ul>
+                      <li>Chính sách đổi trả - hoàn tiền</li>
+                      <li>Chính sách vận chuyển</li>
+                      <li>Chính sách bảo hành</li>
+                      <li>Chính sách khách sỉ</li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright© 2024 - 2TM Books</p>
+      </div>
+  </div>
+    <script src="detail.js"></script>
+  </body>
+</html>

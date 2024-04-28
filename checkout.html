@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thanh toán</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <h3>ĐỊA CHỈ GIAO HÀNG</h3>
+        <hr style="margin: 20px 0; border: 1px solid #b22222">
+        <form action="#">
+                <div class="form-group">
+                    <label for="hoten">Họ và tên người nhận:</label>
+                    <input type="text" id="hoten" name="hoten" placeholder="Nhập họ và tên người nhận" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label for="sdt">Số điện thoại:</label>
+                    <input type="tel" id="sdt" name="sdt" placeholder="Ví dụ: 0979123xxx (10 ký tự số)" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="quocgia">Quốc gia:</label>
+                    <select id="quocgia" name="quocgia" required>
+                        <option value="VN">Việt Nam</option>
+                    </select>
+                </div>
+            <div class="form-group">
+                <label for="tinhthanh">Tỉnh/Thành Phố:</label>
+                <select id="tinhthanh" name="tinhthanh" required onchange="updateDistricts()">
+                    <option value="">Chọn tỉnh/thành phố</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quanhuyen">Quận/Huyện:</label>
+                <select id="quanhuyen" name="quanhuyen" required onchange="updateWards()">
+                    <option value="">Chọn quận/huyện</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phuongxa">Phường/Xã:</label>
+                <select id="phuongxa" name="phuongxa" required>
+                    <option value="">Chọn phường/xã</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ nhận hàng</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+        </form>
+    </div>
+    <br>
+    
+    <div class="container">
+        <form action="#">
+        <h3>PHƯƠNG THỨC VẬN CHUYỂN</h3>
+        <hr style="margin: 20px 0; border: 1px solid #b22222">
+        <div class="shipping-methods">
+            <div class="phuongthuc">
+                <input class="input" type="radio" id="standard-shipping" name="shipping-method" value="standard">
+                <label class="standard" for="standard-shipping">Giao hàng tiêu chuẩn (3-5 ngày)</label><br>
+            </div>
+
+            <div class="phuongthuc">
+            <input class="input" type="radio" id="express-shipping" name="shipping-method" value="express">
+            <label class="express" for="express-shipping">Giao hàng nhanh (1-2 ngày)</label><br>
+            </div>
+        
+            <div class="phuongthuc">
+            <input class="input" type="radio" id="same-day-shipping" name="shipping-method" value="same-day">
+            <label class="same-day" for="same-day-shipping">Giao hàng trong ngày (có phí)</label><br>
+            </div>
+        </div>
+        </form>
+    </div>
+        <br>
+    <div class="container">
+        <form action="#">
+        <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+        <hr style="margin: 20px 0; border: 1px solid #b22222">
+        <div class="shipping-methods">
+            <div class="thanhtoan">
+                <input class="input" type="radio" id="standard-shipping" name="payment-method" value="standard">
+                <img src="image/zalopay_logo.jpg">
+                <label class="standard" for="standard-shipping">Ví ZaloPay</label><br>
+
+            </div>
+            <div class="thanhtoan">
+                <input class="input" type="radio" id="standard-shipping" name="payment-method" value="standard">
+                <img src="image/momo.png">
+                <label class="standard" for="standard-shipping">Ví Momo</label><br>
+            </div>
+            <div class="thanhtoan">
+                <input class="input" type="radio" id="standard-shipping" name="payment-method" value="standard">
+                <img src="image/atm.png">
+                <label class="standard" for="standard-shipping">ATM</label><br>
+            </div>
+            <div class="thanhtoan">
+                <input class="input" type="radio" id="standard-shipping" name="payment-method" value="standard">
+                <img src="image/visa.png">
+                <label class="standard" for="standard-shipping">VISA/Master/JCB</label><br>
+            </div>
+            <div class="thanhtoan">
+                <input class="input" type="radio" id="standard-shipping" name="payment-method" value="standard">
+                <img src="image/tiền mặt.png">
+                <label class="standard" for="standard-shipping">Thanh toán khi nhận hàng</label><br>
+            </div>
+        </form>
+    </div>
+<br>
+    <div class="form-group">
+        <label for="ghichu">Ghi chú đơn hàng:</label>
+        <input type="text" id="ghichu" name="ghichu" required>
+    </div>
+
+    <section class="sp">
+        <div class="xemthemsp">
+            <button onclick="validateAndConfirm()">XÁC NHẬN THANH TOÁN </button>
+        </div>
+          <div class="xemthemsp">
+            <button onclick="redirectToCartPage()">HỦY </button>
+        </div>
+    </section>
+    <script src="checkout.js"></script>  
+</body>
+</html>
+

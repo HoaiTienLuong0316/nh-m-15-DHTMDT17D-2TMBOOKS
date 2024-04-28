@@ -1,0 +1,88 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5; 
+    border: 1px solid #ccc;
+}
+.container h3{
+    color: #b22222;
+}
+.form-group {
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #b22222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.phuongthuc {
+    display: flex;
+}
+.input {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.thanhtoan {
+    display: flex;
+    
+}
+label{
+     margin-left: 10px; /* Khoảng cách giữa hình và chữ */
+    
+    
+}
+.input {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+img {
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.confirmation-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.confirmation-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.confirmation-checkbox label {
+    font-size: 16px;
+}
+
+.sp {
+    display: flex;
+}
+.xemthemsp {
+    padding-right: 20px;
+}

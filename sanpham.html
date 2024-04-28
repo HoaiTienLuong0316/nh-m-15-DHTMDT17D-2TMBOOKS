@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--butrap-->
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+
+    <!-- nouislider -->
+
+    <title>2TM BOOKS</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="trangchu.html" class="logo"> <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+             <a href="giohang.html"> <div class="fa fa-solid fa-shopping-cart" id="cart-btn"></div> </a>
+            <a href="login.html"><div class="fa fa-solid fa-user" id="login-btn"></div></a>
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm...">
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class="containersp container">
+        <div class="heading">
+            <h2><a href="trangchu.html">TRANG CHỦ /</a> tất cả sản phẩm</h2>
+        </div>
+        <div class="search-sp">
+            <select name="" id="">
+                <option value="">Mặc định</option>
+                <option value="">Mới nhất</option>
+                <option value="">Mua nhiều nhất</option>
+                <option value="">Theo giá: Thấp đến cao</option>
+                <option value="">Theo giá: Cao đến thấp</option>
+            </select>
+        </div>
+    </div>
+    <section class="product-small" id="product-small">
+        <div class="search_tt">
+            <div id="search-bar">
+                <form id="search_form">
+                    <input type="text" placeholder="Tìm kiếm..." required="">
+                    <button><a href=""><i class="fa fa-search"></i></a></button>
+                </form>
+            </div>
+            <h1>Danh mục sản phẩm</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Sách văn học</a></li>
+                    <li><a href="#">Sách kỹ năng sống</a></li>
+                    <li><a href="#">Sách tâm lý</a></li>
+                </ul>
+            </div>
+            <h1> Lọc sản phẩm </h1>
+            <div class="filter">
+                <h3>GIÁ</h3>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 0đ - 50.000đ
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 50.000đ - 100.000đ
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 100.000đ - 150.000đ
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" > 150.000đ - 200.000đ
+                </label> <br>
+                <h3>Xuất xứ</h3>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> Việt Nam
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> Hàn Quốc
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> Nhật Bản
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" > Trung Quốc
+                </label> <br>
+                <h3>ĐỘ TUỔI</h3>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 3+
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 7+
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox"> 12+
+                </label> <br>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" > 16+
+                </label> <br>
+            </div>
+            
+            <h1> ĐÁNH GIÁ </h1>
+            <div class="comment-container">
+                <ul class="comments">
+                  <li class="comment">
+                    <img class="avatar" src="image/avt1.jpg" alt="Avatar">
+                    <div class="info">
+                      <span class="name">Mỹ Len</span>
+                      <span class="time">2 minutes ago</span>
+                    </div>
+                    <div class="content">shop bán nhiều sách hay quá nè </div>
+                  </li>
+                  <li class="comment">
+                    <img class="avatar" src="image/av4.jpg" alt="Avatar">
+                    <div class="info">
+                      <span class="name">Tiểu Hí</span>
+                      <span class="time">5 minutes ago</span>
+                    </div>
+                    <div class="content">Mình mua sách ở đây mấy lần rồi </div>
+                  </li>
+              
+                  <li class="comment">
+                      <img class="avatar" src="image/avt5.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Hồng Nguyễn</span>
+                        <span class="time">10 minutes ago</span>
+                      </div>
+                      <div class="content">mua sách ở đây ưng lắm</div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/avt6.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Mỹ Dẹo</span>
+                        <span class="time">12 minutes ago</span>
+                      </div>
+                      <div class="content">thích nhất cuốn Người tập lớn</div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/harry lu.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Harry Lu</span>
+                        <span class="time">15 minutes ago</span>
+                      </div>
+                      <div class="content">Web mà Lu mua sách nhiều nhất </div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/jack xi ca.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Jen ni phơ</span>
+                        <span class="time">15 minutes ago</span>
+                      </div>
+                      <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/jjj.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Jéch xi cà</span>
+                        <span class="time">15 minutes ago</span>
+                      </div>
+                      <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/avt7.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Dương Lê</span>
+                        <span class="time">18 minutes ago</span>
+                      </div>
+                      <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/avt6.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Giang Nguyễn</span>
+                        <span class="time">20 minutes ago</span>
+                      </div>
+                      <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                      <img class="avatar" src="image/avt10.jpg" alt="Avatar">
+                      <div class="info">
+                        <span class="name">Mộng Chè</span>
+                        <span class="time">20 minutes ago</span>
+                      </div>
+                      <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                  
+                </ul>
+              </div>
+        </div>
+
+        <!-- store products -->
+        <div class="product_right">
+            <div class="product-container2">
+            <div class="store-products" id="store-products">
+                
+            </div>
+            </div>
+            <div class="buttons">
+                <button id="prev-page-btn">1</button>
+                <button id="next-page-btn">2</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="image/logo_2tm.png">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 12 Nguyễn Văn Bảo, phường 4, Gò Vấp
+                        TP.HCM</li>
+                    <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                    <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h2>giới thiệu</h2>
+                <ul>
+                    <li>Về 2TM Books</li>
+                    <li>Tuyển dụng</li>
+                    <li>Hệ thống chi nhánh</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-3">
+                <h2>Dịch vụ</h2>
+                <ul>
+                    <li>Điều khoản sử dụng</li>
+                    <li>Giới thiệu 2TM Books</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách thanh toán</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                
+                <h2>hỗ trợ</h2>
+                <ul>
+                    <li>Chính sách đổi trả - hoàn tiền</li>
+                    <li>Chính sách vận chuyển</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách khách sỉ</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright© 2024 - 2TM Books</p>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <Script src="allproduct.js"></Script>
+    <script src="main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</body>
+
+</html>
